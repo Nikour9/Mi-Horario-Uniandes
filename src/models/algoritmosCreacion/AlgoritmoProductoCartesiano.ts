@@ -4,7 +4,7 @@ import Seccion from "../Seccion";
 import Curso from "../Curso";
 import { horarioEsValido } from "@/services/operacionesSobreHorario";
 
-export default class AlgoritmoBacktracking implements AlgoritmoCreacionHorarios {
+export default class AlgoritmoProductoCartesiano implements AlgoritmoCreacionHorarios {
     crearHorarios(cursos: Curso[]): Horario[] {
         const horarios: Horario[] = [];
         this.backtrack(cursos, 0, [], horarios);
